@@ -1,5 +1,6 @@
 package me.j360.tcc.core;
 
+import me.j360.tcc.core.log.TransactionLog;
 import me.j360.tcc.core.log.TransactionRepository;
 
 /**
@@ -30,8 +31,9 @@ public class CompensableTransactionManager {
     }
 
 
-    public void begin() {
+    public TransactionLog begin() {
 
+        return new TransactionLog();
     }
 
 
@@ -44,4 +46,9 @@ public class CompensableTransactionManager {
 
     }
 
+
+    private TransactionLog getCurrentTransaction() {
+
+        return null;
+    }
 }
