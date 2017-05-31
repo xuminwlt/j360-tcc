@@ -7,4 +7,6 @@ package me.j360.tcc.core;
  * 说明：
  */
 public class TransactionContext {
+
+
 }

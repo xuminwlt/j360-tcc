@@ -10,9 +10,38 @@ import me.j360.tcc.core.log.TransactionRepository;
  */
 public class CompensableTransactionManager {
 
+    private volatile static CompensableTransactionManager compensableTransactionManager;
 
     private TransactionRepository transactionRepository;
 
+    private CompensableTransactionManager() {
 
+    }
+
+    public CompensableTransactionManager getInstance() {
+        if (null == compensableTransactionManager) {
+            synchronized (compensableTransactionManager) {
+                if (null == compensableTransactionManager) {
+                    return new CompensableTransactionManager();
+                }
+            }
+        }
+        return compensableTransactionManager;
+    }
+
+
+    public void begin() {
+
+    }
+
+
+    public void commit() {
+
+    }
+
+
+    public void rollback() {
+
+    }
 
 }

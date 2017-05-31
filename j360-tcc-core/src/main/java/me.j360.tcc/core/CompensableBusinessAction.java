@@ -9,7 +9,7 @@ import java.lang.annotation.Target;
  * Package: me.j360.tcc.core
  * User: min_xu
  * Date: 2017/5/27 下午1:46
- * 说明：
+ * 说明：补偿型事务注解器
  */
 
 @Retention(RetentionPolicy.RUNTIME)
