@@ -15,6 +15,23 @@
     <packaging>pom</packaging>
 
 
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>org.springframework</groupId>
+                <artifactId>spring-framework-bom</artifactId>
+                <version>4.3.5.RELEASE</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+            <dependency>
+                <groupId>me.j360.rpc</groupId>
+                <artifactId>j360-rpc</artifactId>
+                <version>1.0.0</version>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+
     <properties>
         <project.encoding>utf-8</project.encoding>
     </properties>

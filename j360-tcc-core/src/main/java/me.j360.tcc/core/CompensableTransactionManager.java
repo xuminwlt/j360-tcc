@@ -15,6 +15,8 @@ public class CompensableTransactionManager {
 
     private TransactionRepository transactionRepository;
 
+    private CoordinatorManager coordinatorManager;
+
     private CompensableTransactionManager() {
 
     }

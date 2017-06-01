@@ -12,4 +12,10 @@
     <artifactId>j360-tcc-spring</artifactId>
 
 
+    <dependencies>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-context</artifactId>
+        </dependency>
+    </dependencies>
 </project>
